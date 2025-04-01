@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to my Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7c0abb776d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h2>Bipul.</h2>
+                <ul id="side">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contacts</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-txt">
+                <p>Full Stack Java Developer</p>
+                <h1>Hi I am <span>Bipul</span><br>Kumar From India</h1>
+            </div>
+        </div>
+    </div>
+    <div class="about" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col1">
+                    <img src="images/bks.png">
+                </div>
+                <div class="col2">
+                    <h1 class="sub">About Me</h1>
+                    <p>
+                        Passionate and detail-oriented Full-Stack Java Developer with a strong foundation in object-oriented programming, data structures, and algorithm design. Proficient in Core Java, Spring Boot, Hibernate, and RESTful APIs, I specialize in building scalable, high-performance applications. Skilled in both backend and frontend development, I have hands-on experience with React.js, JavaScript, and modern UI frameworks to create dynamic and responsive user interfaces. Additionally, I have expertise in working with MySQL, Oracle DB, MongoDB, and version control systems like Git.
+
+                        Eager to leverage my full-stack expertise to develop efficient, maintainable, and user-friendly software solutions
+                    </p>
+                        <div class="titles">
+                            <p class="title1" onclick="opentab('Skills')">Skills</p>
+                            <p class="title1 " onclick="opentab('Experience')">Experience</p>
+                            <p class="title1 " onclick="opentab('Education')">Education</p>
+                        </div>
+                        <div class="contents activetab" id="Skills">
+                            <ul>
+                                <li><span>Web Developer</span><br>Designing Web Applications</li>
+                                
+                                <li><span>Front End Developer</span><br>Designing creative UI Interfaces</li>
+                                
+                                <li><span>Back End Developmer</span><br>Building Backend Web Applications</li>
+                            </ul>
+                        </div>
+                        <div class="contents" id="Experience">
+                            <ul>
+                                <li><span>2023</span><br>Web Developer Intern at CodSoft</li>
+                                
+                                <li><span>2023</span><br>Web Developer Intern at BharatIntern</li>
+                                
+                            </ul>
+                        </div>
+                        <div class="contents" id="Education">
+                            <ul>
+                                <li><span>2016-2018</span><br>CBSE Matriculation With 89% Of Marks</li>
+                                
+                                <li><span>2018-2020</span><br>CBSE Intermediate With 90% Of Marks</li>
+                                
+                                <li><span>2020-2023</span><br>Graduated In Bachelors In Computer Applications With 9 CGPA</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="services" id="services">
+        <div class="container">
+            <h1>My Services</h1>
+            <div class="servicelist">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Designing Web Applications</p>
+                    <a href="#">Learn more</a>                
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI Design</h2>
+                    <p>Creating Interactive UI Interfaces</p>
+                    <a href="#">Learn more</a> 
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>Building Full Stack End to End Apps</h2>
+                    <p>Configuring Full Stack Web Applications</p>
+                    <a href="#">Learn more</a> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="projects">
+        <div class="container">
+            <h1 class="subtitle">My Work</h1>
+            <div class="worklist">
+
+                <div class="work">
+                    <img src="images/socialmedia.avif">
+                    <div class="layer">
+                        <h3>NetyZone App</h3>
+                        <p>streaming service that provides a vast library of movies, TV shows, documentaries, and original content.
+                        </p>
+                        <a href="https://bipul-eng.github.io/BHARATINTERN_AUGUST-Task3-NetyZone-Clone/"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Music Web App</h3>
+                        <p>The app lets you connect to different genres of music.
+                        </p>
+                        <a href="https://bipul-eng.github.io/OCTANET_AUGUST-Task3-Music-App/"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img style="width:100%; height:100%; object-fit:cover;" src="images/weather.avif">
+                    <div class="layer">
+                        <h3>Weather App</h3>
+                        <p>
+                            A simple Weather Application  that fetches real-time weather data from the OpenWeather API.
+                        </p>
+                        <a href="https://bipul-eng.github.io/Weather-App/"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                
+                
+                
+                <div class="work">
+                    <img style="height:100%;" src="images/Temperature-converter.png">
+                    <div class="layer">
+                        <h3>Temperature Converter Website</h3>
+                        <p>
+                            The Temperature Converter is a simple and user-friendly web application designed to help users quickly convert temperatures between different units, including Celsius, Fahrenheit, and Kelvin. 
+                        </p>
+                        <a href="https://bipul-eng.github.io/BHARATINTERN_AUGUST-Task2-Temperature-Converter-Website-/"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img style="height:100%;" src="images/Landing-page.png">
+                    <div class="layer">
+                        <h3>A Landing Page</h3>
+                        <p>
+                            This Landing Page is designed to create a strong first impression and engage visitors instantly.  Optimized for performance and responsiveness, the page ensures seamless navigation across all devices.
+                        </p>
+                        <a href=" https://bipul-eng.github.io/CODSOFT_AUGUST-TASK-1-Landing-Page/"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img style="height:100%;" src="images/To-do-list.png">
+                    <div class="layer">
+                        <h3>To do list web App</h3>
+                        <p>
+                            The To-Do List is a simple and efficient task management web application designed to help users organize their daily activities.
+                        </p>
+                        <a href=" https://bipul-eng.github.io/OCTANET_AUGUST-Task2-To-do-list/"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                    </div>
+                </div>
+
+                
+
+                <div class="work">
+                    <img style="width:100%; height:100%; object-fit:cover;" src="images/EMP.avif">
+                    <div class="layer">
+                        <h3>Employee Management System</h3>
+                        <p>Implemented a secure, user-friendly system with robust CRUD operations, streamlining employee management.
+                        </p>
+                        <a href="https://github.com/bipul-eng/EmployeeManagementSys"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img style="width:100%; height:100%; object-fit:cover;" src="images/Bank.avif">
+                    <div class="layer">
+                        <h3>Aapna Bank Web App</h3>
+                        <p>
+                            Engineered and developed a high-performance system using JSP, Servlets, and Oracle DB for seamless functionality.
+                        </p>
+                        <a href="https://github.com/bipul-eng/ApnaBankProject"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                    </div>
+                </div>
+
+
+                <div class="work">
+                    <img style="width:100%; height:100%; object-fit:cover;" src="images/Ecommerce.png">
+                    <div class="layer">
+                        <h3>Shop Ease Web App</h3>
+                        <p>
+                            Developed a full-stack e-commerce application with React.js for the frontend and Spring Boot for the backend.
+                        </p>
+                        <a href="https://github.com/bipul-eng/ShopEaseApp"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contactleft">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>bipulkr2792003@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>6203113878</p>
+                    <div class="socialicons">
+                        <a herf=""><i class="fa-brands fa-square-facebook"></i></a>
+                        <a herf=""><i class="fa-brands fa-square-twitter"></i></a>
+                        <a herf=""><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/bipul-kumar/" target="_blank">
+  <i class="fa-brands fa-linkedin"></i>
+</a>
+
+                    </div>
+
+                    <!-- <a href="https://github.com/bipul-eng/CODSOFT_AUGUST-TASK-2-Portfolio-Website/images/Bipul_Kumar_Resume.pdf" 
+                       download="Bipul_Kumar_Resume.pdf" 
+                       class="btn btn2">
+                        Download CV
+                   </a> -->
+
+                    
+                </div>
+                <div class="conatctright" id="form">
+                   <form method="post" id="kon">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" type="submit" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                   </form>
+                   <!--  <h4 id="kk"></h4>-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+let tablinks=document.getElementsByClassName('title1');
+let tabcontents=document.getElementsByClassName('contents');
+function opentab(tabname)
+{
+for(tablink of tablinks)
+{
+  tablink.classList.remove('activelink');
+}
+for(tabcontent of tabcontents)
+{
+  tabcontent.classList.remove('activetab');
+}
+event.currentTarget.classList.add('activelink');
+document.getElementById(tabname).classList.add('activetab');
+}
+    </script>
+    <script>
+        var sidemenu=document.getElementById("side");
+        function openmenu()
+        {
+            sidemenu.style.right="0";
+        }
+        function closemenu()
+        {
+            sidemenu.style.right="-200px";
+        }
+    </script>
+    <script>
+        const kk=document.getElementById("kk")
+        const form=document.getElementById("form")
+        form.addEventListener('submit', e=>
+        {
+             e.preventDefault()
+            let h4=document.createElement("h4");
+            h4.innerHTML="Message sent successfully";
+            form.appendChild(h4);
+            h4.id='kk';
+            setTimeout(function(){
+    document.getElementById("kon").reset();
+}, 3000);
+setTimeout(function(){
+    document.getElementById("kk").remove();
+}, 3000);
+        })
+    </script>
+</body>
+
+</html>
